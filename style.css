@@ -1,0 +1,751 @@
+/* =========================================
+   MADUKA UNIVERSITY LIBRARY
+   Clean & Professional Style
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #555;
+    color: #333;;
+    line-height: 1.7;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    
+    background-color: #022e03;
+    color: white;
+    min-height: 75px;
+    padding: 12px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 3px solid #b89b5e;
+}
+
+.logo h2 {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.logo p {
+    color: #d8dedb;
+    font-size: 12px;
+    margin-top: -3px;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    color: #eeeeee;
+    text-decoration: none;
+
+    padding: 9px 13px;
+
+    font-size: 14px;
+    border-radius: 4px;
+
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    background: #058f27;
+    color: white;
+}
+
+nav a.active {
+    background: #28594d;
+    color: #e0c98c;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 510px;
+
+    background:
+        linear-gradient(
+            rgba(23, 63, 53, 0.78),
+            rgba(23, 63, 53, 0.78)
+        ),
+        url("image.jpg/1788864812333.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #e7ebe9;
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 28px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+    display: inline-block;
+
+    background: #b89b5e;
+    color: #173f35;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 4px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    background: #a98b4f;
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   PAGE BANNER
+   ========================================= */
+
+.page-banner {
+    background: #e9eeeb;
+
+    text-align: center;
+
+    padding: 55px 20px;
+
+    border-bottom: 1px solid #d9dfdc;
+}
+
+.page-banner h1 {
+    color: #173f35;
+
+    font-size: 35px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.page-banner p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+.section {
+    padding: 65px 7%;
+    background: #ffffff;
+}
+
+.section.light {
+    background: #f1f4f2;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    color: #173f35;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.section > .container > h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.card {
+    background: white;
+
+    border: 1px solid #e1e5e2;
+
+    border-radius: 6px;
+
+    padding: 27px;
+
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    border-color: #c6cec9;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    color: #173f35;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    border: 1px solid #e0e4e1;
+}
+
+th {
+    background: #173f35;
+    color: white;
+
+    text-align: left;
+
+    font-weight: 500;
+
+    padding: 14px;
+}
+
+td {
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e7e5;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: #f8faf9;
+}
+
+/* =========================================
+   DIGITAL LIBRARY
+   ========================================= */
+
+.section ol,
+.section ul {
+    max-width: 850px;
+    margin: 0 auto;
+
+    padding-left: 25px;
+}
+
+.section li {
+    color: #555;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+}
+
+/* =========================================
+   STAFF
+   ========================================= */
+
+.staff-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.staff-card {
+    background: white;
+
+    border: 1px solid #e0e4e1;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    transition: 0.25s ease;
+}
+
+.staff-card:hover {
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transform: translateY(-3px);
+}
+
+.staff-image {
+    width: 100%;
+    height: 210px;
+
+    background: #e7ece9;
+
+    overflow: hidden;
+}
+
+.staff-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.staff-card h3 {
+    color: #173f35;
+
+    font-size: 17px;
+
+    margin: 17px 10px 2px;
+}
+
+.staff-card .position {
+    color: #a1844e;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.staff-card p:last-child {
+    padding: 0 15px;
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+/* =========================================
+   LIBRARY RULES
+   ========================================= */
+
+.rules {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.rule {
+    display: flex;
+
+    gap: 20px;
+
+    background: white;
+
+    border: 1px solid #e1e5e2;
+
+    border-radius: 5px;
+
+    padding: 20px;
+
+    margin-bottom: 12px;
+}
+
+.rule > span {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    background: #e9eeeb;
+
+    color: #173f35;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.rule h3 {
+    color: #173f35;
+
+    font-size: 17px;
+
+    margin-bottom: 3px;
+}
+
+.rule p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 45px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #173f35;
+
+    font-size: 26px;
+
+    margin-bottom: 18px;
+}
+
+.contact-item {
+    border-bottom: 1px solid #e1e5e2;
+
+    padding: 17px 0;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item h3 {
+    color: #173f35;
+
+    font-size: 15px;
+
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    font-size: 14px;
+
+    margin: 0;
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.contact-form {
+    background: white;
+
+    border: 1px solid #e1e5e2;
+
+    border-radius: 6px;
+
+    padding: 28px;
+}
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contact-form label {
+    color: #444;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    border: 1px solid #d7ddda;
+
+    border-radius: 4px;
+
+    padding: 11px;
+
+    margin-bottom: 15px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #78968b;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+/* =========================================
+   FAQ
+   ========================================= */
+
+.faq {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.faq h3 {
+    color: #173f35;
+
+    font-size: 17px;
+
+    margin-top: 22px;
+
+    margin-bottom: 5px;
+}
+
+.faq p {
+    font-size: 14px;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #173f35;
+
+    color: #d9dfdc;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    border-top: 3px solid #b89b5e;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px 5%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .staff-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        text-align: center;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .page-banner {
+        padding: 40px 20px;
+    }
+
+    .page-banner h1 {
+        font-size: 29px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .rule {
+        gap: 12px;
+    }
+
+    .rule > span {
+        width: 32px;
+        height: 32px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
